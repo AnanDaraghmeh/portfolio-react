@@ -1,0 +1,40 @@
+.projects {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 1rem;
+  padding: 0.5rem;
+  @include atMedium {
+    grid-template-columns: 1fr 1fr;
+  }
+  @include atLarge {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+.card {
+  padding: 0.5rem;
+  animation: scale-up 500ms;
+  box-shadow: 2px 4px 10px lightgray;
+  transition: all 500ms;
+  &:hover {
+    box-shadow: 4px 4px 10px lightgray;
+    transform: translateY(-10px);
+  }
+
+  &_img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    filter: grayscale(50%);
+    transition: all 200ms;
+    &:hover {
+      filter: grayscale(0%);
+    }
+    &::active {
+      transform: scale(0.95);
+    }
+  }
+}

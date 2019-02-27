@@ -1,0 +1,32 @@
+.link {
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.3rem 0.5rem;
+  transition: all 400ms;
+  margin-right: 0.2rem;
+  &:hover {
+    cursor: pointer;
+  }
+
+  &-primary {
+    background: $primary-color;
+    color: $white;
+    &:active {
+      background: $bright-red;
+      color: $white;
+    }
+  }
+  &-lg {
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  &-inverted {
+    background: $white;
+    color: $primary-color;
+    &:active {
+      background: $bright-red;
+      color: $white;
+    }
+  }
+}

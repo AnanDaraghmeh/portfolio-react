@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Squada+One');
+
+* {
+  box-sizing: border-box;
+}
+*::selection {
+  background-color: $primary-color;
+  color: $white;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: $bg-color;
+}
+::placeholder {
+  color: $white;
+  opacity: 1;
+}

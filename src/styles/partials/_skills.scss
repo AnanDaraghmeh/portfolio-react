@@ -1,0 +1,53 @@
+.skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  margin-top: 0.5rem;
+  background: rgba(175, 93, 99, 0.5);
+  animation: slide-from-top 1000ms;
+  @include atMedium {
+    flex-direction: row;
+    align-items: stretch;
+  }
+
+  &_section {
+    width: 100%;
+    margin: 1rem;
+    border: #af5d63 solid 1px;
+    @include atMedium {
+      width: 30%;
+    }
+  }
+
+  &_title {
+    display: block;
+    width: 100%;
+    background: #af5d63;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 1rem 0rem;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  &_list {
+    margin: 0;
+    padding: 0.5rem;
+    list-style: none;
+    transition: all 0.5s linear;
+
+    & li {
+      margin: 0.5rem 1rem;
+    }
+  }
+
+  &_icon {
+    display: inline-block;
+    width: 1rem;
+    margin-right: 0.5rem;
+    margin-left: 0;
+  }
+}

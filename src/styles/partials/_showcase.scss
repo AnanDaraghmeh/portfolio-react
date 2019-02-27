@@ -1,0 +1,36 @@
+.showcase {
+  width: 100%;
+  height: 100vh;
+  background: url(https://source.unsplash.com/random);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  animation: slide-from-top 750ms;
+
+  &_text {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-weight: bold;
+    line-height: 1.5rem;
+    letter-spacing: 1px;
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    padding: 0.5rem 0.8rem;
+  }
+}
+
+.date,
+.time {
+  font-family: 'Squada One', cursive;
+  font-weight: 100;
+  display: block;
+  text-align: center;
+  font-size: 1.3rem;
+  line-height: 1.5rem;
+  text-transform: uppercase;
+}
