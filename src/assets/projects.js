@@ -8,22 +8,16 @@ import notes from './images/notes.PNG';
 
 const projects = [
   {
-    img: weather,
-    name: 'Weather App',
-    desc: 'A weather demo app powered by openweathermap.org API.',
-    link: 'https://demo-weather-app.netlify.com'
+    img: notes,
+    name: 'MY NOTES',
+    desc: 'Demo CRUD app with react/redux and firebase(firestore and auth).',
+    link: 'https://mynotes-d565a.firebaseapp.com'
   },
   {
-    img: bmi,
-    name: 'BMI calculator',
-    desc: 'A simple BMI calculator.',
-    link: 'https://simple-bmi-calculator.netlify.com'
-  },
-  {
-    img: calculator,
-    name: 'Calculator',
-    desc: 'A simple calculator.',
-    link: 'https://simple-calculator-app.netlify.com'
+    img: krona,
+    name: 'Krona',
+    desc: 'Currency Converter react app',
+    link: 'https://krona-currency-converter.netlify.com'
   },
   {
     img: movie,
@@ -39,16 +33,22 @@ const projects = [
     link: 'https://lexikon.netlify.com'
   },
   {
-    img: krona,
-    name: 'Krona',
-    desc: 'Currency Converter react app',
-    link: 'https://krona-currency-converter.netlify.com'
+    img: weather,
+    name: 'Weather App',
+    desc: 'A weather demo app powered by openweathermap.org API.',
+    link: 'https://demo-weather-app.netlify.com'
   },
   {
-    img: notes,
-    name: 'MY NOTES',
-    desc: 'Demo CRUD app with react/redux and firebase(firestore and auth).',
-    link: 'https://mynotes-d565a.firebaseapp.com'
+    img: calculator,
+    name: 'Calculator',
+    desc: 'A simple calculator.',
+    link: 'https://simple-calculator-app.netlify.com'
+  },
+  {
+    img: bmi,
+    name: 'BMI calculator',
+    desc: 'A simple BMI calculator.',
+    link: 'https://simple-bmi-calculator.netlify.com'
   }
 ];
 
