@@ -1,4 +1,6 @@
 import React from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCode } from '@fortawesome/free-solid-svg-icons';
 
 const ProjectCard = ({ project }) => {
   return (
@@ -6,15 +8,18 @@ const ProjectCard = ({ project }) => {
       <a href={project.link} target="_blank" rel="noopener noreferrer">
         <img className="card_img" src={project.img} alt="project" />
       </a>
-      <h3>{project.name}</h3>
+      <a className="link" href={project.link}>
+        <h3>{project.name}</h3>
+      </a>
       <p>{`${project.desc}`}</p>
       <a
-        className="link link-primary link-lg"
-        href={project.link}
+        className="link link-code"
+        href={project.code}
         target="_blank"
         rel="noopener noreferrer"
       >
-        To the project page
+        <FontAwesomeIcon icon={faCode} style={{ marginRight: '0.3rem' }} />
+        SOURCE CODE
       </a>
     </div>
   );

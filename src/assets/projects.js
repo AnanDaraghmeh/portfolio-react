@@ -11,44 +11,51 @@ const projects = [
     img: notes,
     name: 'MY NOTES',
     desc: 'Demo CRUD app with react/redux and firebase(firestore and auth).',
-    link: 'https://mynotes-d565a.firebaseapp.com'
+    link: 'https://mynotes-d565a.firebaseapp.com',
+    code: 'https://github.com/AnanDaraghmeh/MY-NOTES'
   },
   {
     img: krona,
     name: 'Krona',
     desc: 'Currency Converter react app',
-    link: 'https://krona-currency-converter.netlify.com'
+    link: 'https://krona-currency-converter.netlify.com',
+    code: 'https://github.com/AnanDaraghmeh/krona'
   },
   {
     img: movie,
     name: 'PoP MOViES',
     desc: 'A movie web app powered by The Movie DB API.',
-    link: 'https://pop-movies.netlify.com'
+    link: 'https://pop-movies.netlify.com',
+    code: 'https://github.com/AnanDaraghmeh/movie-app'
   },
   {
     img: lexikon,
     name: 'Lexikon',
     desc:
       'A Swedish-Arabic dictionary, powered by Glosbe - the multilingual online dictionary.',
-    link: 'https://lexikon.netlify.com'
+    link: 'https://lexikon.netlify.com',
+    code: 'https://github.com/AnanDaraghmeh/lexikon'
   },
   {
     img: weather,
     name: 'Weather App',
     desc: 'A weather demo app powered by openweathermap.org API.',
-    link: 'https://demo-weather-app.netlify.com'
+    link: 'https://demo-weather-app.netlify.com',
+    code: 'https://github.com/AnanDaraghmeh/weatherApp'
   },
   {
     img: calculator,
     name: 'Calculator',
-    desc: 'A simple calculator.',
-    link: 'https://simple-calculator-app.netlify.com'
+    desc: 'Simple React Calculator.',
+    link: 'https://simple-calculator-app.netlify.com',
+    code: 'https://github.com/AnanDaraghmeh/calc-react'
   },
   {
     img: bmi,
     name: 'BMI calculator',
     desc: 'A simple BMI calculator.',
-    link: 'https://simple-bmi-calculator.netlify.com'
+    link: 'https://simple-bmi-calculator.netlify.com',
+    code: 'https://github.com/AnanDaraghmeh/bmiCalculator'
   }
 ];
 

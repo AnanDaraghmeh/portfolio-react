@@ -31,7 +31,7 @@ class Skills extends React.Component {
               </li>
               <li>
                 <FontAwesomeIcon className="skills_icon" icon={faCss3Alt} />
-                Front-end frameworks (eg, Bootstrap4)
+                Front-end frameworks (eg, Bootstrap4, materialize, semantic ui)
               </li>
               <li>
                 <FontAwesomeIcon className="skills_icon" icon={faJs} />
@@ -48,7 +48,7 @@ class Skills extends React.Component {
             <ul className="skills_list">
               <li>
                 <FontAwesomeIcon className="skills_icon" icon={faFire} />
-                Firebase (firestore, auth, cloud functions)
+                Firebase (firestore, auth, cloud functions, hosting)
               </li>
             </ul>
           </div>
@@ -69,7 +69,7 @@ class Skills extends React.Component {
               </li>
               <li>
                 <FontAwesomeIcon className="skills_icon" icon={faMobileAlt} />
-                Progressive Web Apps
+                Responsive web design
               </li>
             </ul>
           </div>

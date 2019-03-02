@@ -28,7 +28,7 @@
     height: auto;
     display: block;
     margin: 0 auto;
-    filter: grayscale(50%);
+    filter: grayscale(30%);
     transition: all 200ms;
     &:hover {
       filter: grayscale(0%);

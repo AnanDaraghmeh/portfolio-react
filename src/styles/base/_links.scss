@@ -1,9 +1,10 @@
 .link {
   display: inline-block;
   text-decoration: none;
-  padding: 0.3rem 0.5rem;
+  padding: 0.5rem;
   transition: all 400ms;
   margin-right: 0.2rem;
+  color: black;
   &:hover {
     cursor: pointer;
   }
@@ -16,9 +17,15 @@
       color: $white;
     }
   }
-  &-lg {
+  &-code {
+    background: black;
+    color: $white;
     text-transform: uppercase;
     font-weight: bold;
+    &:active {
+      background: $white;
+      color: black;
+    }
   }
 
   &-inverted {
