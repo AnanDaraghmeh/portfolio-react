@@ -24,6 +24,10 @@
   }
 }
 
+.date-time-container {
+  min-height: 3rem;
+  animation: scale-up 1s both;
+}
 .date,
 .time {
   font-family: 'Squada One', cursive;

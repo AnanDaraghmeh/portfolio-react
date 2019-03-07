@@ -24,7 +24,7 @@ class DateTime extends React.Component {
   render() {
     const { date, time } = this.state;
     return (
-      <div style={{ minHeight: '3rem' }}>
+      <div className="date-time-container">
         <span className="date">{date}</span>
         <span className="time">{time}</span>
       </div>
