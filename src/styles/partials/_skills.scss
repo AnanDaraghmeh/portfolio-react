@@ -37,10 +37,10 @@
     margin: 0;
     padding: 0.5rem;
     list-style: none;
-    transition: all 0.5s linear;
 
     & li {
       margin: 0.5rem 1rem;
+      display: flex;
     }
   }
 

@@ -9,13 +9,19 @@ const ProjectCard = ({ project }) => {
         <img className="card_img" src={project.img} alt="project" />
       </a>
       <a
+        target="_blank"
+        rel="noopener noreferrer"
         style={{ paddingLeft: '0', paddingBottom: '0' }}
         className="link"
         href={project.link}
       >
-        <h3>{project.name}</h3>
+        <h3 style={{ marginBottom: '0.5rem', marginTop: '0.5rem' }}>
+          {project.name}
+        </h3>
       </a>
-      <p style={{ marginTop: '0' }}>{`${project.desc}`}</p>
+      <p
+        style={{ marginTop: '0', marginBottom: '0.5rem', minHeight: '2rem' }}
+      >{`${project.desc}`}</p>
       <a
         className="link link-code"
         href={project.code}

@@ -5,12 +5,14 @@ import {
   faCss3Alt,
   faJs,
   faNodeJs,
-  faGulp
+  faGulp,
+  faReact
 } from '@fortawesome/free-brands-svg-icons';
 import {
   faFire,
   faCodeBranch,
-  faMobileAlt
+  faMobileAlt,
+  faServer
 } from '@fortawesome/free-solid-svg-icons';
 
 class Skills extends React.Component {
@@ -27,7 +29,7 @@ class Skills extends React.Component {
               </li>
               <li>
                 <FontAwesomeIcon className="skills_icon" icon={faCss3Alt} />
-                CSS3, SCSS
+                CSS3 and Sass
               </li>
               <li>
                 <FontAwesomeIcon className="skills_icon" icon={faCss3Alt} />
@@ -38,8 +40,12 @@ class Skills extends React.Component {
                 JavaScript/ES6, JQuery
               </li>
               <li>
-                <FontAwesomeIcon className="skills_icon" icon={faJs} />
+                <FontAwesomeIcon className="skills_icon" icon={faReact} />
                 React and Redux
+              </li>
+              <li>
+                <FontAwesomeIcon className="skills_icon" icon={faReact} />
+                Gatsby.js
               </li>
             </ul>
           </div>
@@ -49,6 +55,10 @@ class Skills extends React.Component {
               <li>
                 <FontAwesomeIcon className="skills_icon" icon={faFire} />
                 Firebase (firestore, auth, cloud functions, hosting)
+              </li>
+              <li>
+                <FontAwesomeIcon className="skills_icon" icon={faServer} />
+                Basic knowledge of Express and MonogoDB
               </li>
             </ul>
           </div>

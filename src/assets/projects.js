@@ -5,8 +5,15 @@ import movie from './images/movie.PNG';
 import lexikon from './images/lexikon.PNG';
 import krona from './images/krona.PNG';
 import notes from './images/notes.PNG';
-
+import blog from './images/blog.PNG';
 const projects = [
+  {
+    img: blog,
+    name: 'My Personal Blog',
+    desc: 'Build with Gatsby.',
+    link: 'https://anandaraghmeh-blog.netlify.com',
+    code: 'https://github.com/AnanDaraghmeh/blog'
+  },
   {
     img: notes,
     name: 'MY NOTES',

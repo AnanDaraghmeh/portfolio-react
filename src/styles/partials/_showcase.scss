@@ -21,12 +21,13 @@
     left: 50%;
     transform: translate(-50%, -40%);
     padding: 0.5rem 0.8rem;
+    animation: fade-in 2s;
   }
 }
 
 .date-time-container {
   min-height: 3rem;
-  animation: scale-up 1s both;
+  animation: fade-in 1s;
 }
 .date,
 .time {
