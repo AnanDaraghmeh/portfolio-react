@@ -1,8 +1,8 @@
 import React from 'react';
-import DateTime from './DateTime';
 import { Link } from 'react-scroll';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faDownload } from '@fortawesome/free-solid-svg-icons';
+import { faBlog } from '@fortawesome/free-solid-svg-icons';
+import DateTime from './DateTime';
 
 class Hero extends React.Component {
   render() {
@@ -35,9 +35,14 @@ class Hero extends React.Component {
             >
               Projects
             </Link>
-            <Link to="contact" smooth={true} className="link link-inverted">
-              <FontAwesomeIcon icon={faDownload} /> Resume
-            </Link>
+            <a
+              href="https://anandaraghmeh-blog.netlify.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="link link-inverted"
+            >
+              <FontAwesomeIcon icon={faBlog} /> To My Blog
+            </a>
           </div>
         </section>
       </div>
