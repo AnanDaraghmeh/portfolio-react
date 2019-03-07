@@ -5,11 +5,16 @@ import Skills from './components/Skills';
 import Projects from './components/Projects';
 import Footer from './components/Footer';
 import UpArrow from './components/UpArrow';
+import SEO from './components/Seo';
 
 class App extends Component {
   render() {
     return (
       <div>
+        <SEO
+          title="Portfolio | Anan Daraghmeh"
+          metaDescription="personal portfolio page"
+        />
         <Header />
         <Hero />
         <Skills />
