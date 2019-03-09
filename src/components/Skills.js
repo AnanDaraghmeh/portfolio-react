@@ -6,14 +6,18 @@ import {
   faJs,
   faNodeJs,
   faGulp,
-  faReact
+  faReact,
+  faSass,
+  faGithub
 } from '@fortawesome/free-brands-svg-icons';
-import {
-  faFire,
-  faCodeBranch,
-  faMobileAlt,
-  faServer
-} from '@fortawesome/free-solid-svg-icons';
+import gatsbyImg from '../assets/brands/gatsby.svg';
+import reduxImg from '../assets/brands/redux.svg';
+import jQueryImg from '../assets/brands/jquery.svg';
+import firebaseImg from '../assets/brands/firebase.svg';
+import gitImg from '../assets/brands/git.svg';
+import npmImg from '../assets/brands/npm.svg';
+import webpackImg from '../assets/brands/webpack.svg';
+import bootstrapImg from '../assets/brands/bootstrap.svg';
 
 class Skills extends React.Component {
   render() {
@@ -23,63 +27,83 @@ class Skills extends React.Component {
           <div className="skills_section">
             <button className="skills_title">Front-End Technologies</button>
             <ul className="skills_list">
-              <li>
+              <li style={{ background: '#E34F26' }}>
                 <FontAwesomeIcon className="skills_icon" icon={faHtml5} />
-                HTML5
+                HTML
               </li>
-              <li>
+              <li style={{ background: '#1572B6' }}>
                 <FontAwesomeIcon className="skills_icon" icon={faCss3Alt} />
-                CSS3 and Sass
+                CSS
               </li>
-              <li>
-                <FontAwesomeIcon className="skills_icon" icon={faCss3Alt} />
-                Front-end frameworks (eg, Bootstrap4, materialize, semantic ui)
+              <li style={{ background: '#CC6699' }}>
+                <FontAwesomeIcon className="skills_icon" icon={faSass} />
+                Sass
               </li>
-              <li>
+              <li style={{ background: '#563D7C' }}>
+                <img
+                  src={bootstrapImg}
+                  alt="bootstrap"
+                  className="skills_icon"
+                />
+                Bootstrap
+              </li>
+              <li style={{ background: '#F8C300' }}>
                 <FontAwesomeIcon className="skills_icon" icon={faJs} />
-                JavaScript/ES6, JQuery
+                JavaScript
               </li>
-              <li>
-                <FontAwesomeIcon className="skills_icon" icon={faReact} />
-                React and Redux
+              <li style={{ background: '#0769AD' }}>
+                <img src={jQueryImg} alt="jquery" className="skills_icon" />
+                JQuery
               </li>
-              <li>
+              <li style={{ background: '#01B3E3' }}>
                 <FontAwesomeIcon className="skills_icon" icon={faReact} />
-                Gatsby.js
+                React
+              </li>
+              <li style={{ background: '#764ABC' }}>
+                <img src={reduxImg} alt="redux" className="skills_icon" />
+                Redux
+              </li>
+              <li style={{ background: '#663399' }}>
+                <img src={gatsbyImg} alt="gatsby" className="skills_icon" />
+                Gatsby
               </li>
             </ul>
           </div>
           <div className="skills_section">
             <button className="skills_title">Back-End Technologies</button>
             <ul className="skills_list">
-              <li>
-                <FontAwesomeIcon className="skills_icon" icon={faFire} />
-                Firebase (firestore, auth, cloud functions, hosting)
-              </li>
-              <li>
-                <FontAwesomeIcon className="skills_icon" icon={faServer} />
-                Basic knowledge of Express and MonogoDB
+              <li style={{ background: '#F89F1B' }}>
+                <img src={firebaseImg} alt="firebase" className="skills_icon" />
+                Firebase
               </li>
             </ul>
           </div>
           <div className="skills_section">
             <button className="skills_title">Other Technologies</button>
             <ul className="skills_list">
-              <li>
+              <li style={{ background: '#339933' }}>
                 <FontAwesomeIcon className="skills_icon" icon={faNodeJs} />
-                Node.js and npm
+                Node
               </li>
-              <li>
-                <FontAwesomeIcon className="skills_icon" icon={faCodeBranch} />
-                Version control (Git, GitHub)
+              <li style={{ background: '#CB3837' }}>
+                <img src={npmImg} alt="npm" className="skills_icon" />
+                NPM
               </li>
-              <li>
+              <li style={{ background: '#F05032' }}>
+                <img src={gitImg} alt="git" className="skills_icon" />
+                Git
+              </li>
+              <li style={{ background: '#181717' }}>
+                <FontAwesomeIcon className="skills_icon" icon={faGithub} />
+                GitHub
+              </li>
+              <li style={{ background: '#DA4648' }}>
                 <FontAwesomeIcon className="skills_icon" icon={faGulp} />
-                Build tools (Gulp, Webpack)
+                Gulp
               </li>
-              <li>
-                <FontAwesomeIcon className="skills_icon" icon={faMobileAlt} />
-                Responsive web design
+              <li style={{ background: '#005571' }}>
+                <img src={webpackImg} alt="webpack" className="skills_icon" />
+                Webpack
               </li>
             </ul>
           </div>
