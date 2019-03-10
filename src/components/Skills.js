@@ -22,8 +22,8 @@ import bootstrapImg from '../assets/brands/bootstrap.svg';
 class Skills extends React.Component {
   render() {
     return (
-      <div id="skills">
-        <section className="skills">
+      <div className="section" id="skills">
+        <section className="skills container">
           <div className="skills_section">
             <button className="skills_title">Front-End Technologies</button>
             <ul className="skills_list">

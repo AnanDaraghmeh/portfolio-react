@@ -1,28 +1,28 @@
 .btn {
-    background: $primary-color;
-    border: none;
-    outline: none;
-    color: $white;
-    padding: 0.5rem 1rem;
-    text-transform: uppercase;
-    font-weight: bold;
-    transition: all 200ms;
+  background: $primary-color;
+  border: none;
+  outline: none;
+  color: $white;
+  padding: 0.5rem 1rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: all 200ms;
 
-    &:hover{
-        cursor: pointer;
-    }
+  &:hover {
+    cursor: pointer;
+  }
 
-    &:active{
-        background: $white;
-        color: $primary-color;
-    }
+  &:active {
+    background: $white;
+    color: $primary-color;
+  }
 
-    &-green {
-        color: $primary-color;
-        background: $white;
-        &:active{
-            color: $white;
-            background: green;
-        }
+  &-green {
+    color: $primary-color;
+    background: $white;
+    &:active {
+      color: $white;
+      background: green;
     }
+  }
 }

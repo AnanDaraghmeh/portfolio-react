@@ -3,8 +3,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
-  margin-top: 0.5rem;
   background: rgba(175, 93, 99, 0.5);
   animation: slide-from-top 1000ms;
   @include atMedium {
@@ -39,7 +37,7 @@
     list-style: none;
     display: flex;
     justify-content: center;
-  align-items: center;
+    align-items: center;
     flex-wrap: wrap;
 
     & li {

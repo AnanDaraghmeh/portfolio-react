@@ -5,7 +5,7 @@ import ProjectCard from './ProjectCard';
 class Projects extends React.Component {
   render() {
     return (
-      <section className="projects" id="projects">
+      <section className="projects container section" id="projects">
         {projects.map(project => {
           return <ProjectCard key={project.link} project={project} />;
         })}

@@ -1,10 +1,8 @@
 .projects {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 1rem;
-  padding: 0.5rem;
+
   @include atMedium {
     grid-template-columns: 1fr 1fr;
   }
@@ -12,8 +10,9 @@
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
+
 .card {
-  padding: 0.5rem;
+  background: $white;
   animation: scale-up 500ms;
   box-shadow: 2px 4px 10px lightgray;
   transition: all 500ms;
@@ -36,5 +35,9 @@
     &::active {
       transform: scale(0.95);
     }
+  }
+  &_body {
+    padding-left: 0.5rem;
+    padding-bottom: 0.5rem;
   }
 }

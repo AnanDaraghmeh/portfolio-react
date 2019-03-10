@@ -6,7 +6,7 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 class Footer extends React.Component {
   render() {
     return (
-      <footer className="footer" id="contact">
+      <footer className="footer section" id="contact">
         <a
           className="link link-inverted"
           href="https://github.com/AnanDaraghmeh?tab=repositories"

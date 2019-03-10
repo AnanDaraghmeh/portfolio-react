@@ -1,33 +1,35 @@
-.form{
+.form {
+  width: 100%;
+  padding: 0.5rem;
+  padding-left: 0;
+  margin-top: 0.5rem;
+
+  &_title {
+    margin-bottom: 0.5rem;
+    margin-top: 0;
+  }
+
+  &_group {
     width: 100%;
-    padding: 0.5rem;
-    padding-left: 0;
-    margin-top: 0.5rem;
-
-    &_title{
-        margin-bottom: 0.5rem;
-        margin-top: 0;
+    & input,
+    textarea {
+      padding: 0.5rem;
+      width: 100%;
+      outline: none;
+      border: none;
+      margin-top: 0.2rem;
+      margin-bottom: 0.2rem;
+      border-left: 2px solid white;
+      transition: all 200ms;
+      background: $primary_color;
+      color: white;
     }
-
-    &_group{
-        width: 100%;
-        & input, textarea{
-            padding: 0.5rem;
-            width: 100%;
-            outline: none;
-            border: none;
-            margin-top: 0.2rem;
-            margin-bottom: 0.2rem;
-            border-left: 2px solid white;
-            transition: all 200ms;
-            background: #AF5D63;
-            color: white;
-        }
-        & textarea{
-            resize: none;
-        }
-        & input:focus, textarea:focus{
-            border-left: 3px solid white;
-        }
+    & textarea {
+      resize: none;
     }
+    & input:focus,
+    textarea:focus {
+      border-left: 3px solid white;
+    }
+  }
 }

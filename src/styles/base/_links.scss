@@ -4,7 +4,7 @@
   padding: 0.5rem;
   transition: all 400ms;
   margin-right: 0.2rem;
-  color: black;
+  color: $black;
   &:hover {
     cursor: pointer;
   }
@@ -18,16 +18,12 @@
     }
   }
   &-code {
-    background: black;
+    background: $black;
     color: $white;
     text-transform: uppercase;
     font-weight: bold;
-    padding: 0.3rem;
+    padding: 0.4rem;
     font-size: 0.9rem;
-    &:active {
-      background: $white;
-      color: black;
-    }
   }
 
   &-inverted {
