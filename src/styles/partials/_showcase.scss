@@ -1,7 +1,10 @@
 .showcase {
   width: 100%;
   height: 100vh;
-  background: url(https://source.unsplash.com/cKH9F7Wjn9U);
+  background: #134e5e;
+  background: -webkit-linear-gradient(to top, #71b280, #134e5e);
+  background: linear-gradient(to top, #71b280, #134e5e);
+
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
