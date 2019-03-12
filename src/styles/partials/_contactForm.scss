@@ -1,5 +1,6 @@
 .form {
   width: 100%;
+  max-width: 768px;
   padding: 0.5rem;
   padding-left: 0;
   margin-top: 0.5rem;
@@ -19,17 +20,17 @@
       border: none;
       margin-top: 0.2rem;
       margin-bottom: 0.2rem;
-      border-left: 2px solid white;
+      border-left: 2px solid $white;
       transition: all 200ms;
-      background: $primary_color;
-      color: white;
+      background: $primary-color;
+      color: $white;
     }
     & textarea {
       resize: none;
     }
     & input:focus,
     textarea:focus {
-      border-left: 3px solid white;
+      border-left: 3px solid $secondary-color;
     }
   }
 }

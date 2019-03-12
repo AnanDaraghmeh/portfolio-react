@@ -9,28 +9,22 @@
     cursor: pointer;
   }
 
-  &-primary {
+  &-code {
     background: $primary-color;
     color: $white;
+    font-size: 0.9rem;
+    font-weight: bold;
     &:active {
-      background: $bright-red;
+      background: $secondary-color;
       color: $white;
     }
-  }
-  &-code {
-    background: $black;
-    color: $white;
-    text-transform: uppercase;
-    font-weight: bold;
-    padding: 0.4rem;
-    font-size: 0.9rem;
   }
 
   &-inverted {
     background: $white;
     color: $primary-color;
     &:active {
-      background: $bright-red;
+      background: $secondary-color;
       color: $white;
     }
   }

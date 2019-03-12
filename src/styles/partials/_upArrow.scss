@@ -2,8 +2,8 @@
   position: fixed;
   padding: 1.3rem;
   border-radius: 50%;
-  background: #ed474a;
-  color: #eef0f2;
+  background: $secondary-color;
+  color: $white;
   text-decoration: none;
   z-index: 8;
   font-weight: bold;
@@ -15,8 +15,8 @@
     cursor: pointer;
   }
   &:active {
-    background: #eef0f2;
-    color: #af5d63;
+    background: $white;
+    color: $secondary-color;
     cursor: pointer;
   }
 }
