@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @import url('https://fonts.googleapis.com/css?family=Squada+One');
 
 * {
@@ -10,7 +10,7 @@
 }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   background: $bg-color;
 }
 ::placeholder {
@@ -19,28 +19,21 @@ body {
 }
 
 .container {
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
+  padding-left: 15px;
+  padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
   @include atSmall {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    max-width: 670px;
   }
   @include atMedium {
-    grid-template-columns: 1fr 1fr;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    max-width: 850px;
   }
   @include atLarge {
-    grid-template-columns: 1fr 1fr 1fr;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    max-width: 950px;
   }
   @include atXL {
-    grid-template-columns: 1fr 1fr 1fr;
-    padding-left: 3.5rem;
-    padding-right: 3.5rem;
+    max-width: 1150px;
   }
 }
 

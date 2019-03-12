@@ -41,9 +41,11 @@ class Header extends React.Component {
   }
 
   toggleMobileMenu = () => {
-    this.setState({
-      mobileMenuOpen: !this.state.mobileMenuOpen,
-      togglerLineOpen: !this.state.togglerLineOpen
+    this.setState(prevState => {
+      return {
+        mobileMenuOpen: !prevState.mobileMenuOpen,
+        togglerLineOpen: !prevState.togglerLineOpen
+      };
     });
   };
 

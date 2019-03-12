@@ -7,15 +7,17 @@ class Footer extends React.Component {
   render() {
     return (
       <footer className="footer section" id="contact">
-        <a
-          className="link link-inverted"
-          href="https://github.com/AnanDaraghmeh?tab=repositories"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FontAwesomeIcon icon={faGithub} /> Github Profile
-        </a>
-        <ContactForm />
+        <div className="container">
+          <a
+            className="link link-inverted"
+            href="https://github.com/AnanDaraghmeh?tab=repositories"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FontAwesomeIcon icon={faGithub} /> Github Profile
+          </a>
+          <ContactForm />
+        </div>
       </footer>
     );
   }
