@@ -11,7 +11,7 @@ const projects = [
     img: blog,
     name: 'My Personal Blog',
     desc: 'Build with Gatsby.',
-    link: 'https://anandaraghmeh-blog.netlify.com',
+    link: 'https://reactforcats.netlify.com',
     code: 'https://github.com/AnanDaraghmeh/blog'
   },
   {

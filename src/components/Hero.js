@@ -36,7 +36,7 @@ class Hero extends React.Component {
               Projects
             </Link>
             <a
-              href="https://anandaraghmeh-blog.netlify.com"
+              href="https://reactforcats.netlify.com"
               target="_blank"
               rel="noopener noreferrer"
               className="link link-inverted"
