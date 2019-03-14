@@ -3,7 +3,12 @@
   height: 100vh;
   background: #134e5e;
   background: -webkit-linear-gradient(to top, #71b280, #134e5e);
-  background: linear-gradient(to top, #71b280, #134e5e);
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(113, 178, 128, 0.8),
+      rgba(19, 78, 94, 0.8)
+    ),
+    url(../assets/images/code.jpg);
 
   background-size: cover;
   background-position: center;
