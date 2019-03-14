@@ -1,15 +1,16 @@
 .upArrow {
-  position: fixed;
-  padding: 1.3rem;
-  border-radius: 50%;
+  padding: 1.2rem 1.3rem;
+  text-align: center;
   background: $secondary-color;
   color: $white;
   text-decoration: none;
-  z-index: 8;
   font-weight: bold;
-  box-shadow: 1px 1px 10px gray;
+  box-shadow: 2px 2px 10px rgba($black, 0.3);
+  border-radius: 50%;
+  position: fixed;
   bottom: 10%;
   right: 5%;
+  z-index: 8;
   animation: scale-up 1s;
 
   &:hover {

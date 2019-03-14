@@ -17,7 +17,7 @@ const projects = [
   {
     img: notes,
     name: 'MY NOTES',
-    desc: 'Demo CRUD app with react/redux and firebase(firestore and auth).',
+    desc: 'Demo CRUD app with react/redux and firebase (firestore and auth).',
     link: 'https://mynotes-d565a.firebaseapp.com',
     code: 'https://github.com/AnanDaraghmeh/MY-NOTES'
   },

@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-scroll';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowUp } from '@fortawesome/free-solid-svg-icons';
 
 class UpArrow extends React.Component {
   state = {
@@ -25,13 +27,15 @@ class UpArrow extends React.Component {
 
   render() {
     return (
-      <div>
+      <>
         {this.state.isArrowShown && (
-          <Link to="about" className="upArrow" smooth={true}>
-            Up
-          </Link>
+          <div>
+            <Link to="about" smooth={true} className="upArrow">
+              <FontAwesomeIcon icon={faArrowUp} />
+            </Link>
+          </div>
         )}
-      </div>
+      </>
     );
   }
 }

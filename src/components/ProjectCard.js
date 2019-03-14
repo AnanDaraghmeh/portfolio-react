@@ -22,7 +22,9 @@ const ProjectCard = ({ project }) => {
         </a>
         <p
           style={{ marginTop: '0', marginBottom: '0.5rem', minHeight: '2rem' }}
-        >{`${project.desc}`}</p>
+        >
+          {project.desc}
+        </p>
         <a
           className="link link-code"
           href={project.code}
