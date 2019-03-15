@@ -34,6 +34,7 @@ class ContactForm extends React.Component {
             type="text"
             placeholder="Your Name"
             name="name"
+            required
           />
         </div>
         <div className="form_group">
@@ -43,6 +44,7 @@ class ContactForm extends React.Component {
             type="email"
             placeholder="Your Email"
             name="email"
+            required
           />
         </div>
         <div className="form_group">
@@ -51,6 +53,7 @@ class ContactForm extends React.Component {
             value={message}
             name="message"
             placeholder="Your message..."
+            required
           />
         </div>
         <button className="btn btn-green" type="submit">
