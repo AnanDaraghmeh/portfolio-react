@@ -13,12 +13,14 @@
 
 .card {
   background: $white;
+  overflow: hidden;
   animation: scale-up 500ms;
-  box-shadow: 2px 4px 10px lightgray;
+  box-shadow: 2px 2px 10px rgba($black, 0.2);
+  border-radius: $radius;
   transition: all 500ms;
   &:hover {
-    box-shadow: 4px 4px 10px lightgray;
-    transform: translateY(-10px);
+    box-shadow: 4px 4px 10px rgba($black, 0.2);
+    transform: translateY(-2px);
   }
 
   &_img {
@@ -32,8 +34,8 @@
     &:hover {
       filter: grayscale(0%);
     }
-    &::active {
-      transform: scale(0.95);
+    &:active {
+      transform: scale(1.025);
     }
   }
   &_body {

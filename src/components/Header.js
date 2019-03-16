@@ -5,20 +5,20 @@ class Header extends React.Component {
   state = {
     mobileMenuOpen: false,
     togglerLineOpen: false,
-    isShrinked: false,
+    isOpaque: false,
     typeWriterTxt: '',
     cursor: <span className="js-cursor" />
   };
 
-  shrinkHeader = () => {
+  opaqueHeader = () => {
     let y = window.scrollY;
-    if (y > 200) {
+    if (y > 50) {
       this.setState({
-        isShrinked: true
+        isOpaque: true
       });
     } else {
       this.setState({
-        isShrinked: false
+        isOpaque: false
       });
     }
   };
@@ -36,7 +36,7 @@ class Header extends React.Component {
   };
 
   componentDidMount() {
-    window.addEventListener('scroll', this.shrinkHeader);
+    window.addEventListener('scroll', this.opaqueHeader);
     this.typeWriter("HEY! I'M ANAN.", 100);
   }
 
@@ -50,10 +50,10 @@ class Header extends React.Component {
   };
 
   render() {
-    const { mobileMenuOpen, togglerLineOpen, isShrinked } = this.state;
+    const { mobileMenuOpen, togglerLineOpen, isOpaque } = this.state;
     return (
       <div>
-        <header className={`header ${isShrinked && 'shrinked'}`}>
+        <header className={`header ${isOpaque && 'opaque'}`}>
           <div onClick={this.toggleMobileMenu} className="toggler">
             <span
               className={`${togglerLineOpen &&

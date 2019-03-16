@@ -1,8 +1,8 @@
 .header {
-  background: $primary-color;
+  background: transparent;
   color: $white;
   font-size: 1.5rem;
-  padding: 1rem;
+  padding: 0.8rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -14,8 +14,8 @@
   transition: all 500ms ease;
   animation: slide-from-top 500ms;
 
-  &.shrinked {
-    padding: 0.7rem;
+  &.opaque {
+    background: $primary-color;
   }
 
   & a {

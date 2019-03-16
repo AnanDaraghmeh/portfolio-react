@@ -6,6 +6,7 @@
   padding: 0.5rem 1rem;
   text-transform: uppercase;
   font-weight: bold;
+  border-radius: $radius;
   transition: all 200ms;
 
   &:hover {
@@ -22,12 +23,9 @@
     background: $white;
     &:hover {
       background: $green;
-      transform: translateY(-2px);
-      box-shadow: 0 4px 10px rgba($black, 0.3);
     }
     &:active {
-      background: darken($green, 5%);
-      transform: translateY(0);
+      background: lighten($green, 5%);
     }
   }
 }
