@@ -68,21 +68,24 @@ class Header extends React.Component {
                 'open'} toggler_line toggler_line-bottom`}
             />
           </div>
-          <Link to="about" smooth={true}>
-            <span>
-              {this.state.typeWriterTxt}
-              {this.state.cursor}
-            </span>
-          </Link>
-          <div className="navMenu-lg">
-            <Link to="about" smooth={true} className="navMenu_link-lg">
+          <div className="header_logo">
+            <Link to="about" smooth={true}>
+              <span>
+                {this.state.typeWriterTxt}
+                {this.state.cursor}
+              </span>
+            </Link>
+          </div>
+
+          <nav className="navMenu">
+            <Link to="about" smooth={true} className="navMenu_link">
               About
             </Link>
             <Link
               to="skills"
               smooth={true}
               offset={-50}
-              className="navMenu_link-lg"
+              className="navMenu_link"
             >
               Skills
             </Link>
@@ -90,19 +93,19 @@ class Header extends React.Component {
               to="projects"
               smooth={true}
               offset={-60}
-              className="navMenu_link-lg"
+              className="navMenu_link"
             >
               Projects
             </Link>
-            <Link to="contact" smooth={true} className="navMenu_link-lg">
+            <Link to="contact" smooth={true} className="navMenu_link">
               Contact
             </Link>
-          </div>
+          </nav>
         </header>
-        <nav className={`navMenu ${mobileMenuOpen && 'navMenu-open'}`}>
+        <nav className={`mobileMenu ${mobileMenuOpen && 'open'}`}>
           <Link
             onClick={this.toggleMobileMenu}
-            className="navMenu_link"
+            className="mobileMenu_link"
             to="about"
             smooth={true}
             style={{ marginTop: '4.1rem' }}
@@ -111,7 +114,7 @@ class Header extends React.Component {
           </Link>
           <Link
             onClick={this.toggleMobileMenu}
-            className="navMenu_link"
+            className="mobileMenu_link"
             to="skills"
             offset={-50}
             smooth={true}
@@ -120,7 +123,7 @@ class Header extends React.Component {
           </Link>
           <Link
             onClick={this.toggleMobileMenu}
-            className="navMenu_link"
+            className="mobileMenu_link"
             to="projects"
             offset={-60}
             smooth={true}
@@ -129,7 +132,7 @@ class Header extends React.Component {
           </Link>
           <Link
             onClick={this.toggleMobileMenu}
-            className="navMenu_link"
+            className="mobileMenu_link"
             to="contact"
             smooth={true}
           >

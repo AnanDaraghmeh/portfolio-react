@@ -11,14 +11,14 @@ class Hero extends React.Component {
         <section className="showcase" id="about">
           <div className="showcase_text">
             <DateTime />
-            <hr />
+            <div className="divider" />
             <p>
               Welcome to my portfolio page. I'm a self-taught web developer,
               currently front-end with a goal of becoming a full stack
               developer. In this page, you can see some of my projects as well
               as a list of web development technologies that I use currently.
             </p>
-            <hr />
+            <div className="divider" />
             <Link
               to="skills"
               smooth={true}

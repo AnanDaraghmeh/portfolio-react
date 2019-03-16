@@ -1,7 +1,5 @@
 .header {
   background: transparent;
-  color: $white;
-  font-size: 1.5rem;
   padding: 0.8rem;
   display: flex;
   flex-direction: row;
@@ -17,6 +15,10 @@
   &.opaque {
     background: $primary-color;
   }
+  &_logo {
+    font-size: 1.5rem;
+    color: $white;
+  }
 
   & a {
     text-decoration: none;
@@ -28,6 +30,26 @@
 }
 
 .navMenu {
+  display: none;
+  @include atLarge {
+    display: block;
+  }
+  &_link {
+    text-decoration: none;
+    color: $white;
+    margin-left: 1rem;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: all 200ms;
+    &:hover {
+      color: $secondary-color;
+      cursor: pointer;
+    }
+  }
+}
+
+.mobileMenu {
   background: rgba(3, 3, 1, 0.9);
   color: $white;
   position: fixed;
@@ -39,7 +61,7 @@
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.5s;
-  &-open {
+  &.open {
     max-height: 100%;
   }
 
@@ -57,31 +79,6 @@
       border-left: 0.2rem $secondary-color solid;
       cursor: pointer;
     }
-    &::active {
-      border-left: 0.5rem $secondary-color solid;
-      cursor: pointer;
-    }
-  }
-}
-
-.navMenu-lg {
-  display: none;
-  @include atLarge {
-    display: block;
-  }
-}
-.navMenu_link-lg {
-  text-decoration: none;
-  color: $white;
-  margin-left: 1rem;
-  text-transform: uppercase;
-  font-size: 1rem;
-  font-weight: bold;
-  transition: all 200ms;
-
-  &:hover {
-    color: $secondary-color;
-    cursor: pointer;
   }
 }
 
@@ -89,6 +86,9 @@
   width: 30px;
   height: 20px;
   position: relative;
+  @include atLarge {
+    display: none;
+  }
   &:hover {
     cursor: pointer;
   }
@@ -101,30 +101,26 @@
     left: 0;
     transform: rotate(0deg);
     transition: all 200ms;
-  }
-  @include atLarge {
-    display: none;
-  }
-}
-
-.toggler_line-top {
-  top: 0px;
-  &.open {
-    top: 10px;
-    transform: rotate(135deg);
-  }
-}
-.toggler_line-middle {
-  top: 10px;
-  &.open {
-    opacity: 0;
-    left: -30px;
-  }
-}
-.toggler_line-bottom {
-  top: 20px;
-  &.open {
-    top: 10px;
-    transform: rotate(-135deg);
+    &-top {
+      top: 0px;
+      &.open {
+        top: 10px;
+        transform: rotate(135deg);
+      }
+    }
+    &-middle {
+      top: 10px;
+      &.open {
+        opacity: 0;
+        left: -30px;
+      }
+    }
+    &-bottom {
+      top: 20px;
+      &.open {
+        top: 10px;
+        transform: rotate(-135deg);
+      }
+    }
   }
 }
