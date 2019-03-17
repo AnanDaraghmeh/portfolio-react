@@ -140,6 +140,15 @@ class Header extends React.Component {
           >
             Contact
           </Link>
+          <a
+            onClick={this.toggleMobileMenu}
+            className="mobileMenu_link"
+            href="https://reactforcats.netlify.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Blog
+          </a>
         </nav>
       </div>
     );
