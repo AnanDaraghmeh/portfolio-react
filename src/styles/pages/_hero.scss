@@ -18,9 +18,8 @@
   animation: slide-from-top 750ms;
 
   &_content {
-    background: rgba(0, 0, 0, 0.2);
     color: $white;
-    font-weight: 600;
+    background: rgba(0, 0, 0, 0.2);
     line-height: 1.5rem;
     letter-spacing: 1px;
     width: 90%;
@@ -35,7 +34,8 @@
   }
 
   &_text {
-    text-align: justify;
+    font-weight: 600;
+    text-align: center;
   }
 }
 
