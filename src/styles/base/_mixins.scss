@@ -1,23 +1,22 @@
-@mixin atSmall {
-  @media (min-width: 576px) {
-    @content;
+@mixin mq($breakpoint) {
+  @if $breakpoint == small {
+    @media (min-width: 576px) {
+      @content;
+    }
   }
-}
-
-@mixin atMedium {
-  @media (min-width: 768px) {
-    @content;
+  @if $breakpoint == medium {
+    @media (min-width: 768px) {
+      @content;
+    }
   }
-}
-
-@mixin atLarge {
-  @media (min-width: 992px) {
-    @content;
+  @if $breakpoint == large {
+    @media (min-width: 992px) {
+      @content;
+    }
   }
-}
-
-@mixin atXL {
-  @media (min-width: 1200px) {
-    @content;
+  @if $breakpoint == xl {
+    @media (min-width: 1200px) {
+      @content;
+    }
   }
 }

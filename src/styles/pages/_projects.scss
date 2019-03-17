@@ -3,10 +3,10 @@
   grid-template-columns: 1fr;
   grid-gap: 1rem;
 
-  @include atMedium {
+  @include mq(medium) {
     grid-template-columns: 1fr 1fr;
   }
-  @include atLarge {
+  @include mq(large) {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }

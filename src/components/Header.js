@@ -87,8 +87,8 @@ class Header extends React.Component {
             </Link>
           </nav>
         </header>
-        <div className="toggler-container">
-          <div onClick={this.toggleMobileMenu} className="toggler">
+        <div onClick={this.toggleMobileMenu} className="toggler-container">
+          <div className="toggler">
             <span
               className={`${togglerLineOpen &&
                 'open'} toggler_line toggler_line-top`}

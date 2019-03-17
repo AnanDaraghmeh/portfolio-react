@@ -27,16 +27,16 @@ body {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  @include atSmall {
+  @include mq(small) {
     max-width: 670px;
   }
-  @include atMedium {
+  @include mq(medium) {
     max-width: 850px;
   }
-  @include atLarge {
+  @include mq(large) {
     max-width: 950px;
   }
-  @include atXL {
+  @include mq(xl) {
     max-width: 1150px;
   }
 }

@@ -31,7 +31,7 @@
 
 .navMenu {
   display: none;
-  @include atLarge {
+  @include mq(large) {
     display: block;
   }
   &_link {
@@ -57,7 +57,7 @@
   left: 50%;
   transform: translate(-50%, -50%) scale(0.8);
   transition: all 0.5s;
-  @include atLarge {
+  @include mq(large) {
     display: none;
   }
   &-container {
@@ -70,13 +70,15 @@
     top: 10%;
     right: 7%;
     z-index: 2000;
-    @include atLarge {
+    &:hover {
+      cursor: pointer;
+    }
+    &:hover .toggler {
+      transform: translate(-50%, -50%) scale(0.85);
+    }
+    @include mq(large) {
       display: none;
     }
-  }
-  &:hover {
-    cursor: pointer;
-    transform: translate(-50%, -50%) scale(0.85);
   }
 
   &_line {
@@ -126,7 +128,7 @@
   right: 7.5%;
   z-index: 1000;
   transition: all 0.5s;
-  @include atLarge {
+  @include mq(large) {
     display: none;
   }
   &.open {
