@@ -27,15 +27,11 @@ class UpArrow extends React.Component {
 
   render() {
     return (
-      <>
-        {this.state.isArrowShown && (
-          <div className="upArrow">
-            <Link to="about" smooth={true}>
-              <FontAwesomeIcon icon={faArrowUp} />
-            </Link>
-          </div>
-        )}
-      </>
+      <Link to="about" smooth={true}>
+        <div className={`upArrow ${this.state.isArrowShown && 'visible'}`}>
+          <FontAwesomeIcon icon={faArrowUp} />
+        </div>
+      </Link>
     );
   }
 }

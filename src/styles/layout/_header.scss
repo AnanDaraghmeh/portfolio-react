@@ -66,8 +66,8 @@
     border-radius: 50%;
     box-shadow: 5px 5px 10px rgba($black, 0.3);
     position: fixed;
-    top: 3.5rem;
-    right: 3rem;
+    top: 10%;
+    right: 7%;
     z-index: 2000;
     &:hover {
       cursor: pointer;
@@ -121,8 +121,8 @@
     rgba(19, 78, 94, 0.95)
   );
   position: fixed;
-  top: 3.8rem;
-  right: 3.3rem;
+  top: 10.7%;
+  right: 7.5%;
   z-index: 1000;
   transition: all 0.5s;
   @include mq(xl) {
