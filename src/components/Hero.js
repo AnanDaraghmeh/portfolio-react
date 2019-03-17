@@ -8,16 +8,18 @@ class Hero extends React.Component {
   render() {
     return (
       <div>
-        <section className="showcase" id="about">
-          <div className="showcase_text">
+        <section className="hero" id="about">
+          <div className="hero_content">
             <DateTime />
             <div className="divider" />
-            <p>
-              Welcome to my portfolio page. I'm a self-taught web developer,
-              currently front-end with a goal of becoming a full stack
-              developer. In this page, you can see some of my projects as well
-              as a list of web development technologies that I use currently.
-            </p>
+            <div className="hero_text">
+              <p>
+                Welcome to my portfolio page. I'm a self-taught web developer,
+                currently front-end with a goal of becoming a full stack
+                developer. In this page, you can see some of my projects as well
+                as a list of web development technologies that I use currently.
+              </p>
+            </div>
             <div className="divider" />
             <div>
               <Link

@@ -1,4 +1,4 @@
-.showcase {
+.hero {
   width: 100%;
   height: 100vh;
   background: #134e5e;
@@ -17,7 +17,7 @@
   position: relative;
   animation: slide-from-top 750ms;
 
-  &_text {
+  &_content {
     background: rgba(0, 0, 0, 0.2);
     color: $white;
     font-weight: 600;
@@ -32,6 +32,10 @@
     transform: translate(-50%, -50%);
     padding: 0.5rem 0.8rem;
     animation: fade-in 2s;
+  }
+
+  &_text {
+    text-align: justify;
   }
 }
 
