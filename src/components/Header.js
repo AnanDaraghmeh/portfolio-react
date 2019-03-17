@@ -54,20 +54,6 @@ class Header extends React.Component {
     return (
       <div>
         <header className={`header ${isOpaque && 'opaque'}`}>
-          <div onClick={this.toggleMobileMenu} className="toggler">
-            <span
-              className={`${togglerLineOpen &&
-                'open'} toggler_line toggler_line-top`}
-            />
-            <span
-              className={`${togglerLineOpen &&
-                'open'} toggler_line toggler_line-middle`}
-            />
-            <span
-              className={`${togglerLineOpen &&
-                'open'} toggler_line toggler_line-bottom`}
-            />
-          </div>
           <div className="header_logo">
             <Link to="about" smooth={true}>
               <span>
@@ -76,7 +62,6 @@ class Header extends React.Component {
               </span>
             </Link>
           </div>
-
           <nav className="navMenu">
             <Link to="about" smooth={true} className="navMenu_link">
               About
@@ -102,6 +87,23 @@ class Header extends React.Component {
             </Link>
           </nav>
         </header>
+        <div className="toggler-container">
+          <div onClick={this.toggleMobileMenu} className="toggler">
+            <span
+              className={`${togglerLineOpen &&
+                'open'} toggler_line toggler_line-top`}
+            />
+            <span
+              className={`${togglerLineOpen &&
+                'open'} toggler_line toggler_line-middle`}
+            />
+            <span
+              className={`${togglerLineOpen &&
+                'open'} toggler_line toggler_line-bottom`}
+            />
+          </div>
+        </div>
+        <div className={`mobileMenu-container ${mobileMenuOpen && 'open'}`} />
         <nav className={`mobileMenu ${mobileMenuOpen && 'open'}`}>
           <Link
             onClick={this.toggleMobileMenu}

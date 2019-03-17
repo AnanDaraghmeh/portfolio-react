@@ -19,30 +19,32 @@ class Hero extends React.Component {
               as a list of web development technologies that I use currently.
             </p>
             <div className="divider" />
-            <Link
-              to="skills"
-              smooth={true}
-              offset={-50}
-              className="link link-inverted"
-            >
-              Skills
-            </Link>
-            <Link
-              to="projects"
-              smooth={true}
-              offset={-60}
-              className="link link-inverted"
-            >
-              Projects
-            </Link>
-            <a
-              href="https://reactforcats.netlify.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="link link-inverted"
-            >
-              <FontAwesomeIcon icon={faBlog} /> To My Blog
-            </a>
+            <div>
+              <Link
+                to="skills"
+                smooth={true}
+                offset={-50}
+                className="link link-inverted"
+              >
+                Skills
+              </Link>
+              <Link
+                to="projects"
+                smooth={true}
+                offset={-60}
+                className="link link-inverted"
+              >
+                Projects
+              </Link>
+              <a
+                href="https://reactforcats.netlify.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="link link-inverted"
+              >
+                <FontAwesomeIcon icon={faBlog} /> To My Blog
+              </a>
+            </div>
           </div>
         </section>
       </div>

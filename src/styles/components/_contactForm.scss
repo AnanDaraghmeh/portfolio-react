@@ -15,13 +15,13 @@
   &_group {
     & input,
     textarea {
-      padding: 0.5rem;
+      padding: 0.6rem 1rem;
       width: 100%;
       border: none;
       margin-top: 0.2rem;
       margin-bottom: 0.2rem;
       border-radius: $radius;
-      border-left: 2px solid $white;
+      border: 1px solid transparent;
       transition: all 200ms;
       background: darken($primary-color, 2%);
       color: $secondary-color;
@@ -36,11 +36,11 @@
     }
     & input:focus:valid,
     textarea:focus:valid {
-      border-left: 2px solid $green;
+      border: 1px solid $green;
     }
     & input:focus:invalid,
     textarea:focus:invalid {
-      border-left: 2px solid crimson;
+      border: 1px solid darken($white, 20%);
     }
   }
 }

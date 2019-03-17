@@ -33,7 +33,6 @@
     }
     &:active {
       background-color: lighten($secondary-color, 5%);
-      transform: translateY(0);
     }
   }
 }
