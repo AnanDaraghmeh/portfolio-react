@@ -29,8 +29,8 @@ class UpArrow extends React.Component {
     return (
       <>
         {this.state.isArrowShown && (
-          <div>
-            <Link to="about" smooth={true} className="upArrow">
+          <div className="upArrow">
+            <Link to="about" smooth={true}>
               <FontAwesomeIcon icon={faArrowUp} />
             </Link>
           </div>

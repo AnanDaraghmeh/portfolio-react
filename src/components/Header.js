@@ -30,6 +30,9 @@ class Header extends React.Component {
         typeWriterTxt: txt.substr(0, index++)
       });
       if (index > txt.length) {
+        this.setState({
+          cursor: <span className="js-cursor-hidden" />
+        });
         clearInterval(timer);
       }
     }, speed);

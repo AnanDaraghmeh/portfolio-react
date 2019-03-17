@@ -3,4 +3,8 @@
   height: 1rem;
   display: inline-block;
   border-right: 1px solid $white;
+  transition: all 0.5s;
+  &-hidden {
+    opacity: 0;
+  }
 }

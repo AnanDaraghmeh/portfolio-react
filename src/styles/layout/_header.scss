@@ -31,7 +31,7 @@
 
 .navMenu {
   display: none;
-  @include mq(large) {
+  @include mq(xl) {
     display: block;
   }
   &_link {
@@ -56,8 +56,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(0.8);
-  transition: all 0.5s;
-  @include mq(large) {
+  @include mq(xl) {
     display: none;
   }
   &-container {
@@ -67,16 +66,13 @@
     border-radius: 50%;
     box-shadow: 5px 5px 10px rgba($black, 0.3);
     position: fixed;
-    top: 10%;
-    right: 7%;
+    top: 3.5rem;
+    right: 3rem;
     z-index: 2000;
     &:hover {
       cursor: pointer;
     }
-    &:hover .toggler {
-      transform: translate(-50%, -50%) scale(0.85);
-    }
-    @include mq(large) {
+    @include mq(xl) {
       display: none;
     }
   }
@@ -125,15 +121,15 @@
     rgba(19, 78, 94, 0.95)
   );
   position: fixed;
-  top: 11%;
-  right: 7.5%;
+  top: 3.8rem;
+  right: 3.3rem;
   z-index: 1000;
   transition: all 0.5s;
-  @include mq(large) {
+  @include mq(xl) {
     display: none;
   }
   &.open {
-    transform: scale(50);
+    transform: scale(70);
   }
 }
 
