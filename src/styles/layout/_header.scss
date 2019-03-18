@@ -49,6 +49,25 @@
   }
 }
 
+//toggler
+.toggler-container {
+  width: 3rem;
+  height: 3rem;
+  background: darken($white, 2%);
+  border-radius: 50%;
+  box-shadow: 5px 5px 10px rgba($black, 0.3);
+  position: fixed;
+  top: 3.5rem;
+  right: 2rem;
+  z-index: 2000;
+  &:hover {
+    cursor: pointer;
+  }
+  @include mq(xl) {
+    display: none;
+  }
+}
+
 .toggler {
   width: 30px;
   height: 20px;
@@ -58,23 +77,6 @@
   transform: translate(-50%, -50%) scale(0.8);
   @include mq(xl) {
     display: none;
-  }
-  &-container {
-    width: 3rem;
-    height: 3rem;
-    background: darken($white, 2%);
-    border-radius: 50%;
-    box-shadow: 5px 5px 10px rgba($black, 0.3);
-    position: fixed;
-    top: 10%;
-    right: 7%;
-    z-index: 2000;
-    &:hover {
-      cursor: pointer;
-    }
-    @include mq(xl) {
-      display: none;
-    }
   }
 
   &_line {
@@ -111,9 +113,10 @@
   }
 }
 
+//mobile menu
 .mobileMenu-container {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 2.1rem;
+  height: 2.1rem;
   border-radius: 50%;
   background: radial-gradient(
     to left bottom,
@@ -121,15 +124,15 @@
     rgba(19, 78, 94, 0.95)
   );
   position: fixed;
-  top: 10.7%;
-  right: 7.5%;
+  top: 3.9rem;
+  right: 2.4rem;
   z-index: 1000;
   transition: all 0.5s;
   @include mq(xl) {
     display: none;
   }
   &.open {
-    transform: scale(70);
+    transform: scale(80);
   }
 }
 
