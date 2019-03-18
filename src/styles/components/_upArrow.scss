@@ -21,6 +21,14 @@
     opacity: 1;
     visibility: visible;
   }
+  @include mq(large) {
+    bottom: 4rem;
+    right: 4rem;
+  }
+  @include mq(xl) {
+    bottom: 5rem;
+    right: 6rem;
+  }
 
   &:hover {
     cursor: pointer;
