@@ -10,7 +10,7 @@ import blog from './assets/images/blog.PNG';
 const projects = [
   {
     img: blog,
-    name: 'My Personal Blog',
+    name: 'Blog',
     desc: 'Build with Gatsby.',
     link: 'https://reactforcats.netlify.com',
     code: 'https://github.com/AnanDaraghmeh/blog'

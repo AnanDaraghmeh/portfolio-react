@@ -13,10 +13,10 @@ class Hero extends React.Component {
           <div className="divider" />
           <div className="hero_text">
             <p>
-              Welcome to my portfolio page. I'm a self-taught web developer,
-              currently front-end with a goal of becoming a full stack
-              developer. In this page, you can see some of my projects as well
-              as a list of web development technologies that I use currently.
+              Welcome to my portfolio page. I'm a web developer, currently
+              front-end with a goal of becoming a full stack developer. In this
+              page, you can see some of my projects as well as a list of web
+              development technologies that I use.
             </p>
           </div>
           <div className="divider" />

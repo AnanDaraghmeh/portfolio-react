@@ -52,7 +52,7 @@ class ContactForm extends React.Component {
             onChange={this.onInputChange}
             value={message}
             name="message"
-            placeholder="Your message..."
+            placeholder="Your message"
             required
           />
         </div>
