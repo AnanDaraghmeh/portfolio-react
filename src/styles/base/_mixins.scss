@@ -1,21 +1,21 @@
 @mixin mq($breakpoint) {
   @if $breakpoint == small {
-    @media (min-width: 576px) {
+    @media only screen and (min-width: 576px) {
       @content;
     }
   }
   @if $breakpoint == medium {
-    @media (min-width: 768px) {
+    @media only screen and (min-width: 768px) {
       @content;
     }
   }
   @if $breakpoint == large {
-    @media (min-width: 992px) {
+    @media only screen and (min-width: 992px) {
       @content;
     }
   }
   @if $breakpoint == xl {
-    @media (min-width: 1200px) {
+    @media only screen and (min-width: 1200px) {
       @content;
     }
   }

@@ -59,10 +59,10 @@ class Header extends React.Component {
         <header className={`header ${isOpaque && 'opaque'}`}>
           <div className="header_logo">
             <Link to="about" smooth={true}>
-              <span>
+              <div>
                 {this.state.typeWriterTxt}
                 {this.state.cursor}
-              </span>
+              </div>
             </Link>
           </div>
           <nav className="navMenu">

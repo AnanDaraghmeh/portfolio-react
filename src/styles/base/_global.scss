@@ -7,19 +7,19 @@
   box-sizing: border-box;
 }
 
-*::selection {
+::selection {
   background-color: $secondary-color;
   color: $white;
-}
-
-body {
-  font-family: 'Open Sans', sans-serif;
-  background: $bg-color;
 }
 
 ::placeholder {
   color: darken($white, 20%);
   opacity: 1;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: $bg-color;
 }
 
 .container {

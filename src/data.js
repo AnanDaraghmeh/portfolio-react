@@ -1,11 +1,12 @@
-import weather from './images/weather.PNG';
-import bmi from './images/bmi.PNG';
-import calculator from './images/calculator.PNG';
-import movie from './images/movie.jpg';
-import lexikon from './images/lexikon.PNG';
-import krona from './images/krona.PNG';
-import notes from './images/notes.PNG';
-import blog from './images/blog.PNG';
+import weather from './assets/images/weather.PNG';
+import bmi from './assets/images/bmi.PNG';
+import calculator from './assets/images/calculator.PNG';
+import movie from './assets/images/movie.jpg';
+import lexikon from './assets/images/lexikon.PNG';
+import krona from './assets/images/krona.PNG';
+import notes from './assets/images/notes.PNG';
+import blog from './assets/images/blog.PNG';
+
 const projects = [
   {
     img: blog,

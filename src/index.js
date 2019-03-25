@@ -4,13 +4,24 @@ import 'normalize.css';
 import './styles/main.scss';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import { Provider } from './store';
 
 const rootElement = document.getElementById('root');
 
 if (rootElement.hasChildNodes()) {
-  hydrate(<App />, rootElement);
+  hydrate(
+    <Provider>
+      <App />
+    </Provider>,
+    rootElement
+  );
 } else {
-  render(<App />, rootElement);
+  render(
+    <Provider>
+      <App />
+    </Provider>,
+    rootElement
+  );
 }
 
 serviceWorker.unregister();
