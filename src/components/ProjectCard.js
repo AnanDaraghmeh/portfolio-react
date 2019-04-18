@@ -1,6 +1,7 @@
-import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCode } from '@fortawesome/free-solid-svg-icons';
+import React from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCode } from "@fortawesome/free-solid-svg-icons";
+import ReactHtmlParser from "react-html-parser";
 
 const ProjectCard = ({ project }) => {
   return (
@@ -12,18 +13,18 @@ const ProjectCard = ({ project }) => {
         <a
           target="_blank"
           rel="noopener noreferrer"
-          style={{ paddingLeft: '0', paddingBottom: '0' }}
+          style={{ paddingLeft: "0", paddingBottom: "0" }}
           className="link"
           href={project.link}
         >
-          <h3 style={{ marginBottom: '0.5rem', marginTop: '0.5rem' }}>
+          <h3 style={{ marginBottom: "0.5rem", marginTop: "0.5rem" }}>
             {project.name}
           </h3>
         </a>
         <p
-          style={{ marginTop: '0', marginBottom: '0.5rem', minHeight: '2rem' }}
+          style={{ marginTop: "0", marginBottom: "0.5rem", minHeight: "2rem" }}
         >
-          {project.desc}
+          {ReactHtmlParser(project.desc)}
         </p>
         <a
           className="link link-code"
@@ -31,7 +32,7 @@ const ProjectCard = ({ project }) => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FontAwesomeIcon icon={faCode} style={{ marginRight: '0.3rem' }} />
+          <FontAwesomeIcon icon={faCode} style={{ marginRight: "0.3rem" }} />
           SOURCE CODE
         </a>
       </div>
