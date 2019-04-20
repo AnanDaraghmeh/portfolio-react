@@ -1,7 +1,7 @@
 .link {
   display: inline-block;
   text-decoration: none;
-  padding: 0.5rem;
+  padding: 0.3rem 0.5rem;
   margin-right: 0.2rem;
   color: $black;
   font-weight: bold;
@@ -14,7 +14,6 @@
   &-code {
     background-color: $primary-color;
     color: $white;
-    font-size: 0.9rem;
     &:hover {
       background-color: $secondary-color;
       color: darken($white, 5%);

@@ -11,7 +11,8 @@ const projects = [
   {
     img: blog,
     name: "Blog",
-    desc: "Build with <strong>Gatsby.</strong>",
+    desc:
+      "<strong>Gatsby</strong> blog with <strong>contentful</strong> CMS as a backend.",
     link: "https://reactforcats.netlify.com",
     code: "https://github.com/AnanDaraghmeh/blog"
   },
@@ -34,7 +35,7 @@ const projects = [
   {
     img: krona,
     name: "Krona",
-    desc: "Currency Converter react app",
+    desc: "React Currency Converter",
     link: "https://krona-currency-converter.netlify.com",
     code: "https://github.com/AnanDaraghmeh/krona"
   },
