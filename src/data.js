@@ -63,9 +63,9 @@ const projects = [
   {
     img: bmi,
     name: "BMI calculator",
-    desc: "Simple BMI calculator.",
-    link: "https://simple-bmi-calculator.netlify.com",
-    code: "https://github.com/AnanDaraghmeh/bmiCalculator"
+    desc: "React BMI calculator.",
+    link: "https://react-bmi-calculator.netlify.com",
+    code: "https://github.com/AnanDaraghmeh/bmi-react"
   }
 ];
 
