@@ -3,16 +3,14 @@
 @import './base/keyframes';
 @import './base/global';
 @import './base/js';
+@import './base//layout';
+@import './base/buttons';
+@import './base//links';
 
-@import './components/buttons';
-@import './components//links';
 @import './components/contactForm';
 @import './components/upArrow';
-
-@import './layout/header';
-@import './layout/footer';
-@import './layout/divider';
-
-@import './pages/hero';
-@import './pages/skills';
-@import './pages/projects';
+@import './components/header';
+@import './components/footer';
+@import './components/hero';
+@import './components/skills';
+@import './components/projects';

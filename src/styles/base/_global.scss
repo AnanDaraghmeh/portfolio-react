@@ -1,10 +1,15 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700");
-@import url("https://fonts.googleapis.com/css?family=Squada+One");
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Squada+One');
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
 
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  box-sizing: inherit;
 }
 
 ::selection {
@@ -18,29 +23,6 @@
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   background: $bg-color;
-}
-
-.container {
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  @include mq(small) {
-    max-width: 670px;
-  }
-  @include mq(medium) {
-    max-width: 850px;
-  }
-  @include mq(large) {
-    max-width: 950px;
-  }
-  @include mq(xl) {
-    max-width: 1150px;
-  }
-}
-
-.section {
-  margin-top: 1.5rem;
 }
