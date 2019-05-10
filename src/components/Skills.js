@@ -65,6 +65,10 @@ class Skills extends React.Component {
               <img src={firebaseImg} alt="firebase" className="skills_icon" />
               Firebase
             </li>
+            <li style={{ background: '#01B3E3' }}>
+              <FontAwesomeIcon className="skills_icon" icon={faReact} />
+              React Native
+            </li>
             <li style={{ background: '#339933' }}>
               <FontAwesomeIcon className="skills_icon" icon={faNodeJs} />
               Node
